@@ -103,14 +103,13 @@
              </div>
              <form >
                 
-                <input type = "text" name="Name" Required placeholder="Your name" autocomplete="off" id = "name">
                
-                <input type = "email" name="Email" Required placeholder="Your email" autocomplete="off" id = "email">
-               
-           
-                <textarea id = "message" name = "Message"Required placeholder="message"id = "message" autocomplete="off" rows = "4"></textarea>
-
-                <input type = "submit"class="btn" value = "Send" onclick="sendemail()">
+        <input type="text" class="form-control" id="thename" placeholder="Enter Name">
+       
+        <input type="email" class="form-control" id="themail" placeholder="Enter Email">
+      
+        <textarea class="form-control" id="themsg" placeholder="Enter Message"></textarea>
+        <button class="btn" style="margin-top:10px;" onclick="sendemail()">Send</button>
               
             </form>
            
@@ -119,7 +118,39 @@
 
         <!-- JS File -->
         
-        <script src = "script.js" type="text/javascript"></script>
-       
+        <script>
+            function sendemail() {
+                var userid = "bIM5F5f_AFw8lfRT2"
+                emailjs.init(userid);
+                var thename = document.getElementById('thename').value;
+                var themail = document.getElementById('themail').value;
+                var themsg = document.getElementById('themsg').value;
+                var validmail = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+                if (thename == "") {
+                  alert("Please Enter Name");
+                }
+                else if (themail == "" || themail.match(!validmail)) {
+                  alert("Please Enter Valid Email");
+                }
+            
+                else if (themsg == "") {
+                  alert("Please Enter Message");
+                }
+                else {
+                  var contactdetail = {
+                    from_name: thename,
+                    from_email: themail,
+                    message: themsg
+                  };
+                  emailjs.send('service_bswf2a7', 'template_atzmzlq', contactdetail).then(function (res) {
+                    alert("Email Sent Successfully");
+                  },
+                    reason => {
+                      alert("Error Occur");
+                    })
+                }
+              }
+        </script>
+       <script src="script.js"></script>
     </body>
 </html>

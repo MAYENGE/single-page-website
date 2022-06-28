@@ -24,35 +24,35 @@ for(let i = 0; i < allBtns.length; i++){
         document.querySelector('header').style.filter = "blur(0px)";
     });
 }
-function sendemail() {
-    var userid = "bIM5F5f_AFw8lfRT2"
-    emailjs.init(userid);
-    var name = document.getElementById('name').value;
-    var Email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-    var validmail = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-    if (thename == "") {
-      alert("Please Enter Name");
-    }
-    else if (Email == "" || Email.match(!validmail)) {
-      alert("Please Enter Valid Email");
-    }
+// function sendemail() {
+//     var userid = "bIM5F5f_AFw8lfRT2"
+//     emailjs.init(userid);
+//     var name = document.getElementById('name').value;
+//     var Email = document.getElementById('email').value;
+//     var message = document.getElementById('message').value;
+//     var validmail = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+//     if (thename == "") {
+//       alert("Please Enter Name");
+//     }
+//     else if (Email == "" || Email.match(!validmail)) {
+//       alert("Please Enter Valid Email");
+//     }
 
-    else if (message == "") {
-      alert("Please Enter Message");
-    }
-    else {
-      var contactdetail = {
-        from_name: name,
-          from_email: Email,
-          message: message
-        };
+//     else if (message == "") {
+//       alert("Please Enter Message");
+//     }
+//     else {
+//       var contactdetail = {
+//         from_name: name,
+//           from_email: Email,
+//           message: message
+//         };
 
-        emailjs.send('service_bswf2a7', 'template_atzmzlq', contactdetail).then(function (res) {
-          alert("Email Sent Successfully");
-        },
-          reason => {
-            alert("Error Occur");
-          })
-      }
-    }
+//         emailjs.send('service_bswf2a7', 'template_atzmzlq', contactdetail).then(function (res) {
+//           alert("Email Sent Successfully");
+//         },
+//           reason => {
+//             alert("Error Occur");
+//           })
+//       }
+//     }
