@@ -15,7 +15,7 @@ body{
 header{
     /* background: url("bg-img.jpg") center/cover no-repeat; */
     margin-top: 50px;
-    color: red;
+    color: rgb(2, 2, 54);
     min-height: 100vh;
     display: flex;
     justify-content: center;
