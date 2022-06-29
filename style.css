@@ -255,6 +255,9 @@ nav ul li:hover{
         width: 70px;
         padding: 7px 0;
     }
+    img{
+        width: 20%;;
+    }
     nav ul a{
         font-size: 14px;
     }
@@ -274,4 +277,3 @@ nav ul li:hover{
         width: 80vw;
     }
 }
- 
