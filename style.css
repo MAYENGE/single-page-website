@@ -95,12 +95,16 @@ nav ul li:last-child{
 
 
 /***************/
-
+.telle a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
 .page{
     width: 50vw;
     position: absolute;
+    border-radius: 10px;
     margin: 38px auto;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(140, 142, 231, 0.95);
     color: #fff;
     line-height: 1.7;
     padding: 35px;
@@ -275,5 +279,37 @@ nav ul li:hover{
 @media screen and (max-width: 1170px){
     .page{
         width: 80vw;
+        @media screen and (max-width: 560px){
+    nav ul li{
+        width: 70px;
+        padding: 7px 0;
+    }
+    nav ul a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        width: 90vw;
+    }
+    .page{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .page{
+        width: 80vw;
+        
+    }
+    .vd{
+        width: 50%;
+        /* height: auto; */
+    }
+    
+
+}
+        
     }
 }
