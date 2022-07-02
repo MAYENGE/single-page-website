@@ -97,15 +97,15 @@ nav ul li:last-child{
 /***************/
 .telle a{
     text-decoration: none;
-    color: #f0f0f0;
+    color:black;
 }
 .page{
     width: 50vw;
     position: absolute;
     border-radius: 10px;
     margin: 38px auto;
-    background: rgba(140, 142, 231, 0.95);
-    color: #fff;
+    background: white;
+    color: black;
     line-height: 1.7;
     padding: 35px;
     top: 0;
