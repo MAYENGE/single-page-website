@@ -24,35 +24,32 @@ for(let i = 0; i < allBtns.length; i++){
         document.querySelector('header').style.filter = "blur(0px)";
     });
 }
-// function sendemail() {
-//     var userid = "bIM5F5f_AFw8lfRT2"
-//     emailjs.init(userid);
-//     var name = document.getElementById('name').value;
-//     var Email = document.getElementById('email').value;
-//     var message = document.getElementById('message').value;
-//     var validmail = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-//     if (thename == "") {
-//       alert("Please Enter Name");
-//     }
-//     else if (Email == "" || Email.match(!validmail)) {
-//       alert("Please Enter Valid Email");
-//     }
+window.onorientationchange = function () {
 
-//     else if (message == "") {
-//       alert("Please Enter Message");
-//     }
-//     else {
-//       var contactdetail = {
-//         from_name: name,
-//           from_email: Email,
-//           message: message
-//         };
+    var orientation = window.orientation;
 
-//         emailjs.send('service_bswf2a7', 'template_atzmzlq', contactdetail).then(function (res) {
-//           alert("Email Sent Successfully");
-//         },
-//           reason => {
-//             alert("Error Occur");
-//           })
-//       }
-//     }
+    // Look at the value of window.orientation:
+
+    if (orientation === 0) {
+
+        // device is in Portrait mode.
+
+    } else if (orientation === 90) {
+
+        // device is in Landscape mode. The screen is turned to the left.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 0);
+
+    } else if (orientation === -90) {
+
+        // device is in Landscape mode. The screen is turned to the right.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 0);
+
+    }
+
+};
