@@ -92,7 +92,10 @@ nav ul li{
 nav ul li:last-child{
     border: none;
 }
-
+html,body{
+    width: 100%;
+    overflow: hidden;
+}
 
 /***************/
 .telle a{
