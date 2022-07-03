@@ -51,11 +51,7 @@ header{
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
 }
-/* .text h2{
-    text-transform: uppercase;
-    font-size: 36px;
-    padding-bottom: 10px; */
-/* } */
+
 .text p{
     padding-top: 10px;
     font-weight: 300;
@@ -92,8 +88,10 @@ nav ul li{
 nav ul li:last-child{
     border: none;
 }
-html,body{
+html{
+    margin: 0;
     width: 100%;
+    scroll-behavior: none;
     overflow: hidden;
 }
 
@@ -211,19 +209,8 @@ form input[type = "submit"]:hover{
     width: 55px;
     margin: 20px 0;
 }
-/* .btn{
-        
-        width: 120px;
-        height: 40px;
-        margin: 0 auto;
-        background: #000;
-        color: #fff;
-        border: 1px solid #fff;
-        margin-top: 50px;
-        cursor: pointer;
-        transition: all 0.5s ease;
-    
-} */
+
+
 .btn:hover{
     background-color: green;
     color:yellow;

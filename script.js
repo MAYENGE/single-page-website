@@ -24,32 +24,3 @@ for(let i = 0; i < allBtns.length; i++){
         document.querySelector('header').style.filter = "blur(0px)";
     });
 }
-window.onorientationchange = function () {
-
-    var orientation = window.orientation;
-
-    // Look at the value of window.orientation:
-
-    if (orientation === 0) {
-
-        // device is in Portrait mode.
-
-    } else if (orientation === 90) {
-
-        // device is in Landscape mode. The screen is turned to the left.
-
-        $('body').animate({
-            scrollTop: '0'
-        }, 0);
-
-    } else if (orientation === -90) {
-
-        // device is in Landscape mode. The screen is turned to the right.
-
-        $('body').animate({
-            scrollTop: '0'
-        }, 0);
-
-    }
-
-};
