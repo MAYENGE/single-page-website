@@ -91,8 +91,8 @@ nav ul li:last-child{
 html{
     margin: 0;
     width: 100%;
-    scroll-behavior: none;
-    overflow: hidden;
+    scroll-behavior:none;
+    /* overflow: hidden; */
 }
 
 /***************/
