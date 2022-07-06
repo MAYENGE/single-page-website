@@ -36,7 +36,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50vw;
+    width: 55vw;
     position: relative;
 }
 .icon{
@@ -297,6 +297,7 @@ nav ul li:hover{
     nav ul a{
         font-size: 14px;
     }
+    
 }
 
 @media screen and (max-width: 768px){
@@ -306,6 +307,7 @@ nav ul li:hover{
     .page{
         width: 90vw;
     }
+    
 }
 
 @media screen and (max-width: 1170px){
