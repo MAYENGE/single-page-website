@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport"
-        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable-no">
+       <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
         <title>Jullie Young</title>
-        <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico.jpeg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico.jpeg">
+        
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
         
         <header>
             <div class = "wrapper">
-                <video autoplay loop muted plays-inline type="video/mp4" class="bk"src="Clouds.mp4"></video>
+                <video autoplay loop muted  type="video/mp4" class="bk"src="Clouds.mp4"></video>
                 <!-- <div class = "icon">
                     <i class = "fas fa-laptop-code"></i>
                 </div> -->
@@ -157,6 +157,18 @@
                     })
                 }
               }
+              window.document.addEventListener('orientationchange', function() {
+                var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
+                var viewportmeta = document.querySelector('meta[name="viewport"]');
+                if (iOS && viewportmeta) {
+                  if (viewportmeta.content.match(/width=device-width/)) {
+                    viewportmeta.content = viewportmeta.content.replace(/width=[^,]+/, 'width=1');
+                  }
+                  viewportmeta.content = viewportmeta.content.replace(/width=[^,]+/, 'width=' + window.innerWidth);
+                }
+                // If you want to hide the address bar on orientation change, uncomment the next line
+                // window.scrollTo(0, 0);
+              }, false);
         </script>
        <script src="script.js"></script>
     </body>
