@@ -8,13 +8,14 @@
 body{
     font-family: 'Open Sans', sans-serif;
     width: 100vh;
-    /* position: absolute; */
+    
+    
     
 }
-.bt{
-    
-    float: left;
-}
+html, body {
+    margin: 0;
+    padding: 0;
+  }
 header{
     /* background: url("bg-img.jpg") center/cover no-repeat; */
     /* margin-top: 50px; */
@@ -140,6 +141,8 @@ html{
     width: 120px;
     margin: 20px 0;
 }
+
+
 img{
     border:#000;
     border-radius: 5%;

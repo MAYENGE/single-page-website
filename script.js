@@ -21,6 +21,7 @@ for(let i = 0; i < links.length; i++){
 for(let i = 0; i < allBtns.length; i++){
     allBtns[i].addEventListener('click', function(){
         allBtns[i].parentElement.style.display = "none";
+        
         document.querySelector('header').style.filter = "blur(0px)";
     });
 }
