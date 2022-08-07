@@ -293,9 +293,6 @@ nav ul li:hover {
         width: 70px;
         padding: 7px 0;
       }
-      nav ul a {
-        font-size: 14px;
-      }
     }
 
     @media screen and (max-width: 768px) {
@@ -316,5 +313,16 @@ nav ul li:hover {
         /* height: auto; */
       }
     }
+  }
+}
+@media screen and (max-width: 360px) {
+  nav ul a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav ul a {
+    font-size: 10px;
   }
 }
